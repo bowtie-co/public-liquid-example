@@ -1,3 +1,15 @@
+{% comment %}
+Step 1: Display the section_title in an h1 in the container.
+
+Step 2: Iterate through the section blocks, creating new divs with each block. Display the block heading in an h2 and the block text_content in a paragraph.
+
+Step 3: Using the Shopify asset tags, display the block images.
+
+Step 4: Build a button using the block cta text and cta link. Display only if the block settings are present (selected in the editor).
+
+Step 5: Push your work up to a new github branch and create a new pull request.
+{% endcomment %}
+
 <div class="container">
 
 </div>
@@ -5,7 +17,7 @@
 {% schema %}
   {
     "name": {
-      "en": "Alt blocks - Example"
+      "en": "Blocks - Example"
     },
     "class": "index-section",
     "settings": [
@@ -14,9 +26,6 @@
         "id": "section_title",
         "label": {
           "en": "Section Heading"
-        },
-        "default": {
-          "en": "Optional Section Heading"
         }
       }
     ],
@@ -50,22 +59,6 @@
             "type": "url",
             "id": "cta_link",
             "label": "CTA Link"
-          },
-          {
-            "type": "radio",
-            "id": "cta_type",
-            "label": "Button Type",
-            "options": [
-              {
-                "value": "primary",
-                "label": "Primary"
-              },
-              {
-                "value": "outline",
-                "label": "Secondary"
-              }
-            ],
-            "default": "primary"
           }
         ]
       }
