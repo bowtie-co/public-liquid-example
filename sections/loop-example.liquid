@@ -1,0 +1,86 @@
+<div class="container">
+
+</div>
+
+{% schema %}
+  {
+    "name": {
+      "en": "Alt blocks - Example"
+    },
+    "class": "index-section",
+    "settings": [
+      {
+        "type": "text",
+        "id": "section_title",
+        "label": {
+          "en": "Section Heading"
+        },
+        "default": {
+          "en": "Optional Section Heading"
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "type": "Text",
+        "name": "Static block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Block heading"
+          },
+          {
+            "type": "html",
+            "id": "text_content",
+            "label": "Text Content",
+            "default": "<p>This is text content.</p>"
+          },
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "cta_text",
+            "label": "CTA Text"
+          },
+          {
+            "type": "url",
+            "id": "cta_link",
+            "label": "CTA Link"
+          },
+          {
+            "type": "radio",
+            "id": "cta_type",
+            "label": "Button Type",
+            "options": [
+              {
+                "value": "primary",
+                "label": "Primary"
+              },
+              {
+                "value": "outline",
+                "label": "Secondary"
+              }
+            ],
+            "default": "primary"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": {
+          "es": "Alt blocks - Example",
+          "en": "Alt blocks - Example"
+        },
+        "category": {
+          "en": "Blocks",
+          "es": "Blocks"
+        }
+      }
+    ]
+  }
+{% endschema %}
